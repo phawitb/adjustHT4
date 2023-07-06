@@ -11,7 +11,9 @@ def update(contents,id,adj_temp,adj_humid):
     # adj_temp = 2.3
     # adj_humid = -10.8
 
-    auth = Auth.Token("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")
+    #auth = Auth.Token("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")
+    auth = Auth.Token("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")
+    
     g = Github(auth=auth)
     
     contents[id] = {
