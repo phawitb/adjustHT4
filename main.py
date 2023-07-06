@@ -10,6 +10,9 @@ def update(contents,id,adj_temp,adj_humid):
     # id = '202306003'
     # adj_temp = 2.3
     # adj_humid = -10.8
+
+    auth = Auth.Token("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")
+    g = Github(auth=auth)
     
     contents[id] = {
         'adj_temp' : round(adj_temp,1),
@@ -29,8 +32,8 @@ def update(contents,id,adj_temp,adj_humid):
     
 
 
-auth = Auth.Token("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")
-g = Github(auth=auth)
+# auth = Auth.Token("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")
+# g = Github(auth=auth)
 
 response = requests.get("https://raw.githubusercontent.com/phawitb/adjustHT4/main/adjust_error.txt")
 contents = {}
