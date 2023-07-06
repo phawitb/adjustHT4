@@ -74,3 +74,4 @@ zipp==3.15.0
 dataframe-image==0.1.11
 gitdb==4.0.10
 GitPython==3.1.31
+PyGithub==1.59.0
