@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adjust Temperature and Humid</title>
+    <script src="script.js"></script>
+    <style>
+        #H0 {
+          display: none;
+        }
+        #H1 {
+          display: none;
+        }
+        #adj_temp {
+          display: none;
+        }
+        #adj_humid {
+          display: none;
+        }
+        #submitBtn {
+          display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adjust Temperature and Humid</h1>
+
+    <!-- <h1 id="id01" type="number" step=0.1>Old Heading</h1> -->
+
+    <label for="repo">ID:</label>
+    <input type="text" id="id" required><br><br>
+
+    <button id="loadBtn">LOAD</button>
+    <label id="status"></label><br><br>
+
+
+    <label id="H0" for="repo">Adjust Temp:</label>
+    <input type="number" step=0.1 id="adj_temp" required>
+
+    <label id="H1" for="repo">Adjust Humid:</label>
+    <input type="number" step=0.1 id="adj_humid" required><br>
+
+    <button id="submitBtn">Update File</button>
+    <label id="status2"></label>
+</body>
+</html>
